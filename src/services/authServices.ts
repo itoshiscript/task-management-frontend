@@ -18,3 +18,11 @@ export const login = (data: LoginForm) => {
 export const register = (data: RegisterForm) => {
     return api.post("/auth/register", data)
 }
+
+export const logout = () => {
+    return api.post("/auth/logout")
+}
+
+export const me = () => {
+    return api.get("/auth/me")
+}
