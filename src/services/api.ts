@@ -3,7 +3,7 @@ import {useAuthStore} from "../store/authStore.ts";
 import {QueryClient} from "@tanstack/react-query";
 
 export const api = axios.create({
-    baseURL: "http://localhost:3000",
+    baseURL: "https://task-management-backend-2yio.onrender.com",
     withCredentials: true,
 });
 
